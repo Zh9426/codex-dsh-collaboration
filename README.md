@@ -16,6 +16,8 @@
 
 ## 本机部署状态
 
-2026-11-10 已在当前 Windows 用户的 Codex 配置中部署 Terra 默认模型和三个自定义代理，并追加全局路由规则。新 Codex CLI 会话能识别三个代理及对应模型。`dsh-baton` 的任务发送、结果返回和 DSH 工作区写入已做过范围受控的端到端验证；三个自定义代理尚未分别执行实际任务。
+2026-11-10 已在当前 Windows 用户的 Codex 配置中部署 Terra 默认模型和三个自定义代理，并追加全局路由规则。新 Codex CLI 会话能识别三个代理及对应模型。`dsh-baton` 的任务发送、结果返回和 DSH 工作区写入已做过范围受控的端到端验证。测试项目中已分别实际调用 Astra、Luna、Sol，并验证 Terra 在未指定角色时自行委派 DeepSeek。
 
 仓库中的 [`deployment/agents`](deployment/agents) 和 [`deployment/AGENTS.append.md`](deployment/AGENTS.append.md) 是个人配置的可复用副本。克隆仓库本身不会自动安装这些个人配置或 DSH 插件。互联与 Windows 工作区权限的验证记录见 [`docs/协作流程设计草案.md`](docs/协作流程设计草案.md)。
+
+可重复的完整流程测试项目位于 [`test_project/participant_split`](test_project/participant_split)，包含原始错误版本、验收测试、DeepSeek 修复后的实现和首次运行记录。

@@ -1,1 +1,3 @@
 acl-before-dsh-test.txt
+__pycache__/
+verification/
