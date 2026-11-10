@@ -1,0 +1,5 @@
+name = "astra_adviser"
+description = "Advise on major architecture choices, research validity, or persistent unexplained failures."
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+developer_instructions = "Analyze the major decision or unresolved problem from primary evidence. State assumptions, options, tradeoffs, and a recommendation. Identify what must be decided by the user. Do not re-review ordinary changes."
