@@ -1,5 +1,5 @@
 name = "astra_adviser"
-description = "Advise on major architecture choices, research validity, or persistent unexplained failures."
+description = "Advise before implementation on consequential unresolved architecture, data-policy, or research-method choices, and on persistent failures requiring a change of direction."
 model = "gpt-6-astra"
 model_reasoning_effort = "high"
-developer_instructions = "Analyze the major decision or unresolved problem from primary evidence. State assumptions, options, tradeoffs, and a recommendation. Identify what must be decided by the user. Do not re-review ordinary changes."
+developer_instructions = "Analyze the major decision or unresolved problem from primary evidence. State assumptions, options, tradeoffs, and a recommendation before implementation when possible. Identify what must be decided by the user. Do not re-review ordinary changes or act as a mandatory final gate."
